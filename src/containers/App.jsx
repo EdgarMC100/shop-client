@@ -1,14 +1,29 @@
+import React from 'react';
+import Main from '../components/Main';
+import Sidebar from '../components/Sidebar';
+import Logo from '../components/Logo';
+import Navbar from '../components/Navbar';
+import {createGlobalStyle} from 'styled-components';
 
-function tick() {
-    const element = (
-      <div>
-        <h1>Hello, world!</h1>
-        <h2>It is {new Date().toLocaleTimeString()}.</h2>
-      </div>
+const GlobalStyle = createGlobalStyle`
+    body{
+        font-family: 'Roboto', sans-serif;
+        margin:0;
+        padding:0;
+        background: #f5f5f5;
+    }
+`;
+
+const App = () =>{
+    return (
+        <Main>
+        <GlobalStyle/>
+            <Sidebar>
+                <Logo></Logo>
+                <Navbar></Navbar>
+            </Sidebar>
+        </Main>
     );
-    // highlight-next-line
-    ReactDOM.render(element, document.getElementById('root'));
 }
-  
-  setInterval(tick, 1000);
-  
+
+export default App;
