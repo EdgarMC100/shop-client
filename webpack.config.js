@@ -30,8 +30,18 @@ module.exports = {
             {
                 test: /\.(jpg|png)$/,
                 loader: require.resolve('url-loader')
+            },
+            {
+                test: /\.css$/,
+                use:['style-loader','css-loader']
             }
         ]
+        // loaders:[
+        //       {
+        //         test: /\.css$/,
+        //         loader: "style-loader!css-loader"
+        //       },
+        // ]
     },
     plugins:[
         new HtmlWebPackPlugin({

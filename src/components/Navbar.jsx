@@ -28,7 +28,7 @@ const AnchorStyled = styled.a`
 const Menu = ()=>(
     // <nav className="menu" id="menu">
     <NavbarStyled>
-        <AnchorStyled>Orders</AnchorStyled>
+        <AnchorStyled href="#">Orders</AnchorStyled>
         <AnchorStyled href="#">Shipping Status</AnchorStyled>
         <AnchorStyled href="#">Other</AnchorStyled>
         <AnchorStyled href="#">Other</AnchorStyled>

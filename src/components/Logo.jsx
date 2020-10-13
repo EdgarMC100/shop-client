@@ -26,7 +26,7 @@ const LogoSpan = styled.div`
 
 const Logo = ()=>(
     <LogoStyled>
-            <LogoImg src={Image} alt="shop logo"/>
+        <LogoImg src={Image} alt="shop logo"/>
         <LogoSpan>eShop</LogoSpan>
     </LogoStyled>
 );
