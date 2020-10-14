@@ -9,20 +9,29 @@ import css from '../App.css';
 import NavbarTop from '../components/NavbarTop';
 import SearchForm from '../components/SearchForm';
 import styled from 'styled-components';
+import Table from '../components/Table'; 
 
 const GlobalStyle = createGlobalStyle`
     body{
         font-family: 'Roboto', sans-serif;
         margin:0;
         padding:0;
-        background: #f5f5f5;
+        ${'' /* background: #f5f5f5; */}
     }
 `;
-const DivCentered  = styled.div`
+const SectionStyled  = styled.section`
     height:100vh;
-    max-width:90%;
-    margin:0 auto;
+    width:75%;
+    ${'' /* z-index:0; */}
+    ${'' /* margin:0 auto; */}
+    ${'' /* position:fixed; */}
+    ${'' /* left:-100px; */}
+`;
 
+const DivCentered = styled.div`
+    ${'' /* height:100vh; */}
+    max-width:75%;
+    ${'' /* margin:0 auto; */}
 `;
 const App = () =>{
     return (
@@ -36,107 +45,12 @@ const App = () =>{
                 <NavbarTop>
                     <SearchForm></SearchForm>
                 </NavbarTop>
-                <DivCentered>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-                    <p>loremsidpoaidopsaidopiasopdaospidopasidopisdopiaopsdiopaidopsaidopasidpoispad</p>
-
-                </DivCentered>
-                
+                <SectionStyled>
+                    <DivCentered>
+                        <Table>
+                        </Table>
+                    </DivCentered>
+                </SectionStyled>
             </MainContent>
         </Main>
     );

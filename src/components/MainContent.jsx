@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const MainStyled = styled.main`
     position: relative;
-    top: 73px;
+    top: 70px;
 `;
 const MainContent = ({children})=>(
     <MainStyled>

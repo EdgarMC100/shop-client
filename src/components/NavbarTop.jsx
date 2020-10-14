@@ -15,11 +15,12 @@ const NavBarStyled = styled.nav`
     position:fixed;
     top:0;
     border-bottom: 1px solid rgb(221, 215, 215);
-    background:whitesmoke;
+    background:white;
     ${'' /* z-index: 99; */}
     box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
     align-items:center;
     ${'' /* justify-content:space-between; */}
+    z-index:99;
 `;
 
 

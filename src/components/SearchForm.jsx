@@ -39,7 +39,9 @@ const InputStyled = styled.input`
     border-style: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius:5px;
-    border: 1px solid transparent;
+    border: 2px solid whitesmoke;
+    border-right:none;
+    ${'' /* background:whitesmoke; */}
     outline-style: none;
     padding:5px;
     width:100%;
